@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.Fragments_drinks">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_title_drinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/txt_title_drinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="place holder"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/Fab"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                 <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    tools:ignore="Suspicious0dp">
+                     <ImageView
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/coca_cola_image"
+                         android:layout_width="70dp"
+                         android:layout_height="70dp"
+                         android:layout_centerHorizontal="true" />
+                    <CheckBox
+                        android:id="@+id/coca_cola"
+                        android:layout_gravity="center"
+                        android:text="Cola"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="left|bottom"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    tools:ignore="Suspicious0dp">
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/coca_cola_zero_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true" />
+                    <CheckBox
+                        android:id="@+id/coca_cola_zero"
+                        android:text="Cola Zero"
+                        android:paddingTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="left|bottom"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bt_drink_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            app:backgroundTint="@color/Fab" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+
+    <RelativeLayout
+        android:id="@+id/foreground_view"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardBackgroundColor="@color/Fab"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/parent_item"
+                android:background="@drawable/card_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D3D3D3" />
+                <TextView
+                    android:id="@+id/cart_item_name"
+                    android:layout_toRightOf="@id/expand_icon"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal|start"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="Food 01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cart_item_price"
+                    android:layout_toRightOf="@+id/cart_item_name"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:text="1000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/expand_icon"
+                    android:visibility="visible"
+                    android:layout_margin="8dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <RelativeLayout
+                    android:id="@+id/sub_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_bread"
+                        android:layout_marginTop="40dp"
+                        android:padding="6dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_toRightOf="@id/text_bread"
+                        android:id="@+id/text_add_ones"
+                        android:layout_marginTop="40dp"
+                        android:padding="6dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</FrameLayout>
